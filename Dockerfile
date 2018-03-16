@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y build-essential git ruby ruby-dev wget
+RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y build-essential git ruby ruby-dev wget jq
 
 RUN gem install cf-uaac
 
