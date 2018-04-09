@@ -21,4 +21,4 @@ RUN wget https://github.com/cloudfoundry-incubator/credhub-cli/releases/download
   mv credhub /usr/local/bin && \
   rm credhub-linux*
 
-
+RUN curl -sL "https://cli.run.pivotal.io/stable?release=linux64-binary&source=github" | tar -zx && mv cf /usr/local/bin/
